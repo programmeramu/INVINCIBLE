@@ -1,16 +1,26 @@
-import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Logo from './components/Logo';
+import Features from './components/Features';
+import Docs from './components/Docs';
+import Community from './components/Community';
+import Blog from './components/Blog';
+import Footer from './components/Footer';
+import './index.css';
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <div className="app-root">
       <Header />
-      <Hero />
-      <Logo />
+      <main>
+        <Hero />
+        <Features />
+        <Docs />
+        <Community />
+        <Blog />
+      </main>
+      <Footer />
     </div>
   );
-};
+}
 
 export default App;
